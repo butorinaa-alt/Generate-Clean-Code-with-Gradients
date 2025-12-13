@@ -1,3 +1,4 @@
+import React from "react";
 import svgPaths from "../imports/svg-wn8qn1rm7a";
 
 function StatsIcon() {
@@ -22,8 +23,9 @@ function StatsIcon() {
 
 export default function StatsSection() {
   return (
-    <div className="absolute content-stretch flex h-[520px] items-start left-1/2 pb-[100px] pt-[174px] px-[80px] top-[725px] translate-x-[-50%] w-[1440px] max-[1439px]:w-[1280px] max-[1439px]:top-[730px] max-[1439px]:px-[60px] max-[1439px]:pt-[150px] max-[1279px]:w-[1016px] max-[1279px]:h-[485px] max-[1279px]:px-[24px] max-[1279px]:pb-[60px] max-[1279px]:pt-[152px] max-[1279px]:top-[634px] max-[1023px]:w-[768px] max-[1023px]:pt-[120px] max-[767px]:w-[375px] max-[767px]:h-[973px] max-[767px]:px-[16px] max-[767px]:pt-[66px] max-[767px]:pb-[60px] max-[767px]:top-[667px]">
-      <div className="basis-0 content-stretch flex gap-[40px] grow items-start min-h-px min-w-px relative shrink-0 max-[1439px]:gap-[30px] max-[1279px]:gap-[16px] max-[1023px]:flex-wrap max-[767px]:content-start max-[767px]:flex-wrap max-[767px]:gap-[16px]">
+    <section className="w-full flex justify-center px-5 pt-[80px] pb-[80px]">
+      <div className="relative content-stretch flex items-start w-full max-w-[1200px] mx-auto pb-[100px] pt-[174px] px-[80px] max-[1439px]:px-[60px] max-[1439px]:pt-[150px] max-[1279px]:px-[24px] max-[1279px]:pb-[60px] max-[1279px]:pt-[152px] max-[1023px]:pt-[120px] max-[767px]:w-full max-[767px]:px-[16px] max-[767px]:pt-[66px] max-[767px]:pb-[60px]">
+        <div className="basis-0 content-stretch flex gap-[40px] grow items-start min-h-px min-w-px relative shrink-0 max-[1439px]:gap-[30px] max-[1279px]:gap-[16px] max-[1023px]:flex-wrap max-[767px]:content-start max-[767px]:flex-wrap max-[767px]:gap-[16px]">
         {/* Card 1 */}
         <div className="content-stretch flex flex-col gap-[4px] items-start max-w-[290px] relative shrink-0 w-[290px] max-[1439px]:w-[260px] max-[1439px]:max-w-[260px] max-[1279px]:w-[232px] max-[1279px]:max-w-[290px] max-[1279px]:gap-[18px] max-[1023px]:w-[168px] max-[1023px]:gap-[18px] max-[767px]:w-[343px] max-[767px]:max-w-[343px] max-[767px]:gap-[18px]">
           <div className="content-stretch flex flex-col gap-[9px] items-start not-italic relative shrink-0 w-full">
@@ -51,7 +53,7 @@ export default function StatsSection() {
           <div className="content-stretch flex flex-col items-end relative shrink-0 w-[145px] max-[767px]:w-[143px]">
             <div className="flex h-[32.526px] items-center justify-center relative shrink-0 w-full max-[767px]:h-[32.491px]" style={{ "--transform-inner-width": "145", "--transform-inner-height": "30" } as React.CSSProperties}>
               <div className="flex-none rotate-[359deg] w-full">
-                <p className="h-[30px] not-italic relative text-[#c7390a] text-[20px] text-center w-full" style={{ fontFamily: "Solitreo", lineHeight: "normal" }}>grateful for this</p>
+                <p className="h-[30px] not-italic relative text-[#c7390a] text-[20px] text-center w-full" style={{ fontFamily: "Kalam", lineHeight: "normal" }}>grateful for this</p>
               </div>
             </div>
             <div className="h-[28px] relative shrink-0 w-[24px]">
@@ -85,7 +87,7 @@ export default function StatsSection() {
 
       {/* Decorative elements */}
       <div className="absolute content-stretch flex flex-col items-end justify-center left-[1127px] pb-[12px] pt-0 px-0 top-[164px] w-[161.264px] max-[1439px]:left-[1000px] max-[1439px]:top-[140px] max-[1279px]:left-[831px] max-[1279px]:pb-[11px] max-[1279px]:top-[152px] max-[1023px]:left-[572px] max-[1023px]:top-[111px] max-[767px]:left-[188px] max-[767px]:pb-[11px] max-[767px]:top-[810px]">
-        <p className="h-[55px] not-italic relative shrink-0 text-[#c7390a] text-[20px] text-right w-full" style={{ fontFamily: "Solitreo", lineHeight: "20px" }}>AI is a tool, not magic</p>
+        <p className="h-[55px] not-italic relative shrink-0 text-[#c7390a] text-[20px] text-right w-full" style={{ fontFamily: "Kalam", lineHeight: "20px" }}>AI is a tool, not magic</p>
         <StatsIcon />
       </div>
 
@@ -108,6 +110,7 @@ export default function StatsSection() {
           </svg>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 }

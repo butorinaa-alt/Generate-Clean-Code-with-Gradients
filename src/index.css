@@ -1,3 +1,80 @@
+/* Import Google Fonts */
+@import url("//fonts.googleapis.com/css2?family=Kalam:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* Full */
+.min-h-px .items-start .items-end > p.w-full {
+  font-family: "Kalam", handwriting;
+}
+
+/* Paragraph */
+.min-h-px .justify-center p {
+  font-family: "Kalam", handwriting;
+}
+
+/* Full */
+.mx-auto > .justify-center > .w-full {
+  transform: translatex(0px) translatey(0px);
+  font-family: "Kalam", handwriting;
+}
+
+/* Full */
+.justify-between .justify-between .items-end .items-start .w-full {
+  font-family: "kalam";
+  transform: translateX(0px) translateY(0px);
+}
+
+/* Full */
+#offers-section .items-end ul.w-full {
+  list-style-type: disc;
+}
+
+/* min content */
+.flex-wrap .items-start ul.w-\[min-content\] {
+  display: inline-block;
+  transform: translateX(0px) translateY(0px) !important;
+  list-style-type: disc;
+}
+
+/* Spacer between LinkedIn and Founder sections */
+.section-spacer {
+  height: 40px; /* базовое значение для мобильных */
+}
+
+/* 768px */
+@media (min-width: 768px) {
+  .section-spacer {
+    height: 110px;
+  }
+}
+
+/* 1024px */
+@media (min-width: 1024px) {
+  .section-spacer {
+    height: 60px;
+  }
+}
+
+/* 1280px */
+@media (min-width: 1280px) {
+  .section-spacer {
+    height: 80px;
+  }
+}
+
+/* 1440px+ */
+@media (min-width: 1440px) {
+  .section-spacer {
+    height: 90px;
+  }
+}
+
+/* Prevent YouTube border overflow at 1280–1439px */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .yt-preview-border {
+    inset: 0 !important;
+  }
+}
+
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
@@ -4010,4 +4087,123 @@ ul li span {
 @property --tw-tracking {
   syntax: "*";
   inherits: false
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Items center */
+  #linkedin-section > .items-center {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 130px;
+  }
+
+  /* Rotate 358deg */
+  .flex-wrap .items-end .rotate-\[358deg\] {
+    position: relative;
+    top: -58px;
+  }
+
+  /* Justify center */
+  #root .overflow-hidden .min-h-screen > .justify-center {
+    transform: translateX(0px) translateY(0px);
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* Mobile: adjust rotated element */
+@media (max-width: 1023px) {
+  .flex-wrap .items-end .rotate-\[358deg\] {
+    position: relative;
+    top: -43px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Section spacer between LinkedIn and Founder */
+  .section-spacer {
+    display: block;
+    min-height: 135px;
+    width: 100%;
+    flex-shrink: 0;
+    transform: translateX(0) translateY(0);
+  }
+
+  /* Offers section spacing */
+  #offers-section {
+    padding-top: 99px;
+  }
+
+  #root .min-h-screen .section-spacer {
+    min-height: 34px;
+  }
+
+  /* Extra bottom padding for Founder section to clear browser bars */
+  #founder-section {
+    padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  }
+
+  #founder-section-mobile {
+    padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* Footer padding override */
+#section-footer,
+section.w-full.flex.justify-center {
+  padding-bottom: 0 !important;
+}
+
+@media (max-width: 767px) {
+  p.max-\[767px\]\:text-\[50px\] {
+    line-height: 50px !important;
+  }
+}
+
+/* Footer padding bottom override */
+#section-footer {
+  padding-bottom: 20px !important;
+}
+
+/* BackgroundShapes visibility */
+.bg-1440,
+.bg-1280,
+.bg-1024,
+.bg-768 {
+  display: none;
+}
+
+/* 1440px и шире */
+@media (min-width: 1440px) {
+  .bg-1440 {
+    display: block;
+  }
+}
+
+/* 1280–1439px */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .bg-1280 {
+    display: block;
+  }
+}
+
+/* 1024–1279px */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bg-1024 {
+    display: block;
+  }
+}
+
+/* 768–1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bg-768 {
+    display: block;
+  }
+}
+
+/* Мобильные до 767px — используем 768-версию */
+@media (max-width: 767px) {
+  .bg-768 {
+    display: block;
+  }
 }

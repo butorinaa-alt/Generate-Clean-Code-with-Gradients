@@ -57,7 +57,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="absolute content-stretch flex flex-col items-start left-1/2 overflow-clip px-[80px] py-[20px] top-0 translate-x-[-50%] w-[1440px] z-10 max-[1439px]:w-[1280px] max-[1279px]:w-[1016px] max-[1279px]:px-[24px] max-[1023px]:w-[768px] max-[767px]:w-full max-[767px]:px-[16px]">
+      <div className="content-stretch flex flex-col items-start px-[80px] py-[20px] w-full z-10 max-[1439px]:px-[80px] max-[1279px]:px-[24px] max-[1023px]:px-[24px] max-[767px]:px-[16px]">
         <div className="content-stretch flex items-center justify-between relative shrink-0 w-full">
           <Logo />
           

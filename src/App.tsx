@@ -1,3 +1,4 @@
+import React from "react";
 import BackgroundShapes from "./components/BackgroundShapes";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
@@ -21,20 +22,30 @@ export default function App() {
   }, []);
 
   return (
-    <div className="bg-[#f8f5f1] relative size-full">
+    <div className="min-h-screen w-full bg-[#f8f5f1] relative overflow-hidden">
       {showPreloader && (
-        <div id="preloader">
+        <div
+          id="preloader"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#f8f5f1]"
+        >
           <Preloader />
         </div>
       )}
-      <BackgroundShapes />
-      <Footer />
-      <FounderSection />
-      <LinkedInSection />
-      <OffersSection />
-      <StatsSection />
-      <HeroSection />
-      <Header />
+
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <BackgroundShapes />
+      </div>
+
+      <main className="relative z-10 flex min-h-screen w-full flex-col">
+        <Header />
+        <HeroSection />
+        <StatsSection />
+        <OffersSection />
+        <LinkedInSection />
+        <div className="section-spacer" aria-hidden="true" />
+        <FounderSection />
+        <Footer />
+      </main>
     </div>
   );
 }

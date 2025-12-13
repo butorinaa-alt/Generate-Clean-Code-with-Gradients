@@ -1,3 +1,4 @@
+import React from "react";
 import imgOfferImage from "figma:asset/6adf59fb3381333f60cd692cb59e82de994c2e58.png";
 import imgImagePng1 from "figma:asset/19f0a0e4f8ebdf66e7a3a07c00746ebf5adb1bce.png";
 import imgOfferImage1 from "figma:asset/fc8f313aa7d680c491d0921292daa5311edd2554.png";
@@ -144,12 +145,17 @@ function CustomLLMCard() {
 
 export default function OffersSection() {
   return (
-    <div id="offers-section" className="absolute content-stretch flex flex-col gap-[11px] items-center left-1/2 pb-0 pt-[40px] px-[160px] top-[1245px] translate-x-[-50%] w-[1440px] max-[1439px]:w-[1280px] max-[1439px]:top-[1250px] max-[1439px]:px-[80px] max-[1279px]:w-[1016px] max-[1279px]:px-[24px] max-[1279px]:top-[1119px] max-[1023px]:w-[768px] max-[1023px]:pt-[50px] max-[1023px]:px-[160px] max-[767px]:w-[375px] max-[767px]:px-[24px] max-[767px]:pt-[20px] max-[767px]:gap-[10px] max-[767px]:top-[1650px]">
-      <p className="h-[78px] not-italic relative shrink-0 text-[70px] text-black text-center w-[1280px] max-[1439px]:w-[1120px] max-[1279px]:w-full max-[1023px]:w-[720px] max-[767px]:text-[50px] max-[767px]:w-[343px]" style={{ fontFamily: "Instrument Serif", lineHeight: "70px" }}>Work with me</p>
-      <div className="content-end flex gap-[40px] items-end relative shrink-0 w-[1280px] max-[1439px]:w-[1120px] max-[1439px]:gap-[40px] max-[1279px]:w-full max-[1279px]:gap-[16px] max-[1023px]:flex-wrap max-[1023px]:w-[620px] max-[1023px]:gap-[40px] max-[767px]:content-center max-[767px]:flex-wrap max-[767px]:w-[343px] max-[767px]:gap-[16px] max-[767px]:justify-center">
-        <ConsultancyCard />
-        <CustomLLMCard />
+    <section className="w-full flex justify-center px-5 pt-[80px] pb-[80px]">
+      <div
+        id="offers-section"
+        className="content-stretch flex flex-col gap-[11px] items-center pb-0 pt-[40px] px-[160px] w-full max-w-[1200px] mx-auto max-[1439px]:px-[80px] max-[1279px]:px-[24px] max-[1023px]:pt-[50px] max-[1023px]:px-[160px] max-[767px]:px-[24px] max-[767px]:pt-[20px] max-[767px]:gap-[10px]"
+      >
+        <p className="h-[78px] not-italic relative shrink-0 text-[70px] text-black text-center w-[1280px] max-[1439px]:w-[1120px] max-[1279px]:w-full max-[1023px]:w-[720px] max-[767px]:text-[50px] max-[767px]:w-[343px]" style={{ fontFamily: "Instrument Serif", lineHeight: "70px" }}>Work with me</p>
+        <div className="content-end flex gap-[40px] items-end relative shrink-0 w-[1280px] max-[1439px]:w-[1120px] max-[1439px]:gap-[40px] max-[1279px]:w-full max-[1279px]:gap-[16px] max-[1023px]:flex-wrap max-[1023px]:w-[620px] max-[1023px]:gap-[40px] max-[767px]:content-center max-[767px]:flex-wrap max-[767px]:w-[343px] max-[767px]:gap-[16px] max-[767px]:justify-center">
+          <ConsultancyCard />
+          <CustomLLMCard />
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,3 +1,4 @@
+import React from "react";
 import svgPaths1440 from "../imports/svg-wn8qn1rm7a";
 import svgPaths1280 from "../imports/svg-bnkusr49hg";
 import svgPaths1024 from "../imports/svg-pqohruhean";
@@ -7,7 +8,7 @@ export default function BackgroundShapes() {
   return (
     <>
       {/* 1440px version - desktop */}
-      <div className="absolute h-[773px] left-1/2 top-0 translate-x-[-50%] w-[1440px] min-[1440px]:block max-[1439px]:hidden">
+      <div className="absolute h-[773px] left-1/2 top-0 translate-x-[-50%] w-[1440px] bg-1440">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1440 773">
           <g clipPath="url(#clip0_1_304)">
             <g filter="url(#filter0_f_1_304)">
@@ -44,7 +45,7 @@ export default function BackgroundShapes() {
       </div>
 
       {/* 1280px version */}
-      <div className="absolute h-[687px] left-1/2 top-0 translate-x-[-50%] w-[1280px] max-[1439px]:block min-[1440px]:hidden max-[1279px]:hidden">
+      <div className="absolute h-[687px] left-1/2 top-0 translate-x-[-50%] w-[1280px] bg-1280">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1280 687">
           <g clipPath="url(#clip0_16_784)">
             <g filter="url(#filter0_f_16_784)">
@@ -81,7 +82,7 @@ export default function BackgroundShapes() {
       </div>
 
       {/* 1024px version */}
-      <div className="absolute h-[567px] left-1/2 top-0 translate-x-[-50%] w-[1024px] max-[1279px]:block min-[1280px]:hidden">
+      <div className="absolute h-[567px] left-1/2 top-0 translate-x-[-50%] w-[1024px] bg-1024">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1024 567">
           <g clipPath="url(#clip0_26_258)">
             <g filter="url(#filter0_f_26_258)">
@@ -118,7 +119,7 @@ export default function BackgroundShapes() {
       </div>
 
       {/* 768px version */}
-      <div className="absolute h-[567px] left-0 top-0 w-[990px] max-[1023px]:block min-[1024px]:hidden">
+      <div className="absolute h-[567px] left-1/2 top-0 translate-x-[-50%] w-full max-w-[990px] bg-768">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 990 567">
           <g clipPath="url(#clip0_15_363)">
             <g filter="url(#filter0_f_15_363)">
