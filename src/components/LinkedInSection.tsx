@@ -23,22 +23,21 @@ export default function LinkedInSection() {
             content-stretch flex flex-col gap-[11px] items-center
             pb-[144px] pt-[40px] px-0
             max-[1279px]:px-[24px] max-[1279px]:pt-[16px]
-            max-[1023px]:pt-0
+            max-[1023px]:pt-0 max-[1023px]:mx-auto
             max-[767px]:pt-[36px] max-[767px]:px-0 max-[767px]:pb-[144px]
           "
         >
           {/* Градиентная карточка — теперь ширина = ширина контейнера */}
           <div
-            className="
-              relative rounded-[20px] w-full
+            className="relative rounded-[20px] w-full max-w-[1120px] mx-auto
               flex flex-wrap items-start gap-[80px]
               px-[40px] py-[46px]
-              max-[1439px]:gap-[60px]
+              max-[1439px]:gap-[120px]
               max-[1279px]:px-[20px] max-[1279px]:py-[35px] max-[1279px]:gap-[74px]
+              max-[1023px]:px-[40px]
               max-[1023px]:gap-[60px]
               max-[767px]:flex-col max-[767px]:gap-[58px]
-              max-[767px]:px-[20px] max-[767px]:py-[35px]
-            "
+              max-[767px]:px-[20px] max-[767px]:py-[35px]"
             style={{
               background:
                 "linear-gradient(95deg, #FFD0AF 3.32%, #FFECD5 66.38%, #E9763F 95.92%)",
@@ -127,7 +126,7 @@ export default function LinkedInSection() {
             </div>
 
             {/* Карточка-скриншот */}
-            <div className="absolute content-stretch flex flex-col items-end left-[80px] top-[255px] w-[351px] max-[1279px]:left-[31px] max-[1023px]:top-[515px] max-[767px]:left-[18px] max-[767px]:top-[632px] max-[767px]:w-[277px]">
+            <div className="absolute content-stretch flex flex-col items-end left-[80px] top-[255px] w-[351px] max-[1279px]:left-[31px] max-[1023px]:top-[515px] max-[1023px]:left-1/2 max-[1023px]:-translate-x-1/2 max-[767px]:left-[18px] max-[767px]:top-[632px] max-[767px]:w-[277px]">
               <div
                 className="flex h-[199.843px] items-center justify-center relative shrink-0 w-[320.405px] max-[767px]:h-[157.711px] max-[767px]:w-[252.855px]"
                 style={

@@ -44,6 +44,11 @@ export default function App() {
         <LinkedInSection />
         <div className="section-spacer" aria-hidden="true" />
         <FounderSection />
+        <section
+          className="block w-full h-[10px] min-h-[10px] flex-none
+                     max-[767px]:h-[400px] max-[767px]:min-h-[400px]"
+          aria-hidden="true"
+        />
         <Footer />
       </main>
     </div>

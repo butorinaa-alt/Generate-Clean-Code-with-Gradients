@@ -48,7 +48,11 @@ export default function FounderSection() {
                 </p>
               </div>
 
-              <div className="content-stretch flex items-center justify-between relative shrink-0 w-full max-[1279px]:w-[640px] max-[1279px]:gap-[23px] max-[767px]:flex-col max-[767px]:gap-[15px] max-[767px]:justify-center max-[767px]:w-full max-[767px]:h-auto max-[767px]:min-h-0">
+              <div className="content-stretch flex items-center justify-between relative shrink-0 w-full
+                max-[767px]:mt-[70px]
+                max-[1279px]:w-[640px] max-[1279px]:gap-[23px]
+                max-[767px]:flex-col max-[767px]:gap-[15px]
+                max-[767px]:justify-center max-[767px]:w-full max-[767px]:h-auto max-[767px]:min-h-0">
                 <div className="content-stretch flex flex-col gap-[15px] items-end relative shrink-0 w-[347px] max-[1439px]:w-[270px] max-[1279px]:w-[320px] max-[1279px]:gap-[13px] max-[767px]:items-start max-[767px]:w-full max-[767px]:h-auto max-[767px]:min-h-0">
                   <div
                     className="content-stretch flex flex-col gap-[6px] items-start not-italic relative shrink-0 text-[#c7390a] text-[20px] w-full max-[1279px]:gap-0"
@@ -100,6 +104,7 @@ export default function FounderSection() {
         </div>
       </section>
 
+
       <section
         id="founder-section-mobile"
         className="w-full flex md:hidden justify-center px-5 pt-[80px] pb-[80px]"
@@ -142,7 +147,12 @@ export default function FounderSection() {
                 </p>
               </div>
 
-              <div className="content-stretch flex items-center justify-between relative shrink-0 w-full max-[1279px]:w-[640px] max-[1279px]:gap-[23px] max-[767px]:flex-col max-[767px]:gap-[15px] max-[767px]:justify-center max-[767px]:w-full max-[767px]:h-auto max-[767px]:min-h-0">
+              <div className="content-stretch flex items-center justify-between relative shrink-0 w-full
+                mt-[70px]
+                max-[767px]:mt-[150px]
+                max-[1279px]:w-[640px] max-[1279px]:gap-[23px]
+                max-[767px]:flex-col max-[767px]:gap-[15px]
+                max-[767px]:justify-center max-[767px]:w-full max-[767px]:h-auto max-[767px]:min-h-0">
                 <div className="content-stretch flex flex-col gap-[15px] items-end relative shrink-0 w-[347px] max-[1439px]:w-[270px] max-[1279px]:w-[320px] max-[1279px]:gap-[13px] max-[767px]:items-start max-[767px]:w-full max-[767px]:h-auto max-[767px]:min-h-0">
                   <div
                     className="content-stretch flex flex-col gap-[6px] items-start not-italic relative shrink-0 text-[#c7390a] text-[20px] w-full max-[1279px]:gap-0"

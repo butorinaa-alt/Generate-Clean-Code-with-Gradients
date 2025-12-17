@@ -25,7 +25,14 @@ export default function StatsSection() {
   return (
     <section className="w-full flex justify-center px-5 pt-[80px] pb-[80px]">
       <div className="relative content-stretch flex items-start w-full max-w-[1200px] mx-auto pb-[100px] pt-[174px] px-[80px] max-[1439px]:px-[60px] max-[1439px]:pt-[150px] max-[1279px]:px-[24px] max-[1279px]:pb-[60px] max-[1279px]:pt-[152px] max-[1023px]:pt-[120px] max-[767px]:w-full max-[767px]:px-[16px] max-[767px]:pt-[66px] max-[767px]:pb-[60px]">
-        <div className="basis-0 content-stretch flex gap-[40px] grow items-start min-h-px min-w-px relative shrink-0 max-[1439px]:gap-[30px] max-[1279px]:gap-[16px] max-[1023px]:flex-wrap max-[767px]:content-start max-[767px]:flex-wrap max-[767px]:gap-[16px]">
+        <div
+          className="basis-0 content-stretch flex grow relative min-h-px min-w-px shrink-0
+          gap-[40px] items-start justify-between
+          max-[1439px]:gap-[30px]
+          max-[1279px]:gap-[16px]
+          max-[1023px]:flex-wrap max-[1023px]:justify-center max-[1023px]:content-center
+          max-[767px]:justify-center max-[767px]:content-start"
+        >
         {/* Card 1 */}
         <div className="content-stretch flex flex-col gap-[4px] items-start max-w-[290px] relative shrink-0 w-[290px] max-[1439px]:w-[260px] max-[1439px]:max-w-[260px] max-[1279px]:w-[232px] max-[1279px]:max-w-[290px] max-[1279px]:gap-[18px] max-[1023px]:w-[168px] max-[1023px]:gap-[18px] max-[767px]:w-[343px] max-[767px]:max-w-[343px] max-[767px]:gap-[18px]">
           <div className="content-stretch flex flex-col gap-[9px] items-start not-italic relative shrink-0 w-full">

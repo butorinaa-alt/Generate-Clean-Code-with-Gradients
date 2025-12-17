@@ -34,38 +34,55 @@ function LogoMmLab() {
 
 export default function HeroSection() {
   return (
-    <section className="w-full flex justify-center px-5 pt-[80px] pb-[80px]">
-      <div className="content-stretch flex flex-col gap-[201px] items-center w-full max-w-[1200px] mx-auto px-[183px] py-[76px] max-[1279px]:px-[24px] max-[1279px]:gap-[113px] max-[767px]:w-full max-[767px]:gap-[78px] max-[767px]:px-[16px] max-[767px]:pb-[63px] max-[767px]:pt-[45px] max-[767px]:overflow-clip">
-        <div className="content-stretch flex flex-col gap-[69px] items-end relative shrink-0 w-[960px] max-[1439px]:gap-[52px] max-[1439px]:w-full max-[767px]:gap-[51px]">
-          <motion.div
-            className="content-stretch flex flex-col gap-px items-center relative shrink-0 text-[70px] w-full max-[767px]:text-[50px]"
-            style={{ fontFamily: "Instrument Serif, Noto Sans Symbols", lineHeight: "63px", letterSpacing: "-0.7px" }}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
-            <div className="relative shrink-0 text-[#2c2c2c] w-full max-[767px]:leading-[58px] max-[767px]:tracking-[-0.5px]" style={{ fontWeight: 400 }}>
-              <p className="mb-0">{`Yandex Sr. PM → `}</p>
-              <p>{`AI Startup CEO ($2M funding) `}</p>
-            </div>
-            <p className="relative shrink-0 text-[#c7390a] text-right w-full max-[767px]:leading-[58px] max-[767px]:tracking-[-0.5px]" style={{ fontWeight: 400 }}>
-              → Your shipping partner
-            </p>
-          </motion.div>
-          <p className="not-italic relative shrink-0 text-[#2c2c2c] text-[19px] w-[388px] max-[1439px]:w-[484px] max-[1279px]:w-full max-[767px]:w-[343px]" style={{ fontFamily: "Inter", fontWeight: 400, lineHeight: "24px" }}>Building AI products since 2018 as PM, CEO and Advisor – before ChatGPT existed</p>
-        </div>
-        
-        <div className="content-stretch flex gap-[51px] items-center relative shrink-0 max-[767px]:gap-[32.373px]">
-          <div className="h-[20px] relative shrink-0 w-[82px] max-[767px]:h-[12.695px] max-[767px]:w-[52.051px]">
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <img alt="" className="absolute h-[136.62%] left-[0.2%] max-w-none top-[-20%] w-[222.14%]" src={imgLogoYa} />
-            </div>
+    <section className="relative w-full flex justify-center px-5 pt-[80px] pb-[80px] overflow-hidden">
+      {/* Background layer (FULL-WIDTH, not inside max-w container) */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        {/* soft blobs */}
+        <div className="absolute -top-[220px] left-[18%] h-[520px] w-[520px] rounded-full blur-[120px] bg-[rgba(199,57,10,0.18)]" />
+        <div className="absolute top-[40px] right-[-140px] h-[560px] w-[560px] rounded-full blur-[130px] bg-[rgba(199,57,10,0.14)]" />
+        <div className="absolute bottom-[-260px] left-[45%] h-[640px] w-[640px] -translate-x-1/2 rounded-full blur-[140px] bg-[rgba(199,57,10,0.10)]" />
+      </div>
+
+      {/* Content container */}
+      <div className="content-stretch flex flex-col items-center w-full max-w-[1200px] mx-auto px-[183px] py-[76px]
+                      max-[1279px]:px-[24px] max-[1279px]:py-[64px]
+                      max-[1023px]:py-[56px]
+                      max-[767px]:w-full max-[767px]:px-[16px] max-[767px]:pt-[45px] max-[767px]:pb-[63px]">
+
+        {/* NOTE: на 1024 иногда нужно чуть меньше воздуха */}
+        <div className="w-full flex flex-col items-center gap-[201px] max-[1279px]:gap-[130px] max-[1023px]:gap-[110px] max-[767px]:gap-[78px]">
+          
+          <div className="content-stretch flex flex-col gap-[69px] items-end relative shrink-0 w-[960px] max-[1439px]:gap-[52px] max-[1439px]:w-full max-[767px]:gap-[51px]">
+            <motion.div
+              className="content-stretch flex flex-col gap-px items-center relative shrink-0 text-[70px] w-full max-[767px]:text-[50px]"
+              style={{ fontFamily: "Instrument Serif, Noto Sans Symbols", lineHeight: "63px", letterSpacing: "-0.7px" }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <div className="relative shrink-0 text-[#2c2c2c] w-full max-[767px]:leading-[58px] max-[767px]:tracking-[-0.5px]" style={{ fontWeight: 400 }}>
+                <p className="mb-0">{`Yandex Sr. PM → `}</p>
+                <p>{`AI Startup CEO ($2M funding) `}</p>
+              </div>
+              <p className="relative shrink-0 text-[#c7390a] text-right w-full max-[767px]:leading-[58px] max-[767px]:tracking-[-0.5px]" style={{ fontWeight: 400 }}>
+                → Your shipping partner
+              </p>
+            </motion.div>
+            <p className="not-italic relative shrink-0 text-[#2c2c2c] text-[19px] w-[388px] max-[1439px]:w-[484px] max-[1279px]:w-full max-[767px]:w-[343px]" style={{ fontFamily: "Inter", fontWeight: 400, lineHeight: "24px" }}>Building AI products since 2018 as PM, CEO and Advisor – before ChatGPT existed</p>
           </div>
-          <div className="h-[21px] relative shrink-0 w-[132px] max-[767px]:h-[13.33px] max-[767px]:w-[83.789px]">
-            <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgLogoUb11} />
+
+          <div className="content-stretch flex gap-[51px] items-center relative shrink-0 max-[767px]:gap-[32.373px]">
+            <div className="h-[20px] relative shrink-0 w-[82px] max-[767px]:h-[12.695px] max-[767px]:w-[52.051px]">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-[136.62%] left-[0.2%] max-w-none top-[-20%] w-[222.14%]" src={imgLogoYa} />
+              </div>
+            </div>
+            <div className="h-[21px] relative shrink-0 w-[132px] max-[767px]:h-[13.33px] max-[767px]:w-[83.789px]">
+              <img alt="" className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full" src={imgLogoUb11} />
+            </div>
+            <LogoAcr />
+            <LogoMmLab />
           </div>
-          <LogoAcr />
-          <LogoMmLab />
         </div>
       </div>
     </section>

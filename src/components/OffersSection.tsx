@@ -46,7 +46,27 @@ function OfferCardImage() {
 
 function ConsultancyCard() {
   return (
-    <div className="content-stretch flex flex-col h-[579px] items-start justify-between pb-[29px] pt-0 px-0 relative shrink-0 w-[620px] max-[1439px]:w-[540px] max-[1279px]:w-[476px] max-[1023px]:w-[620px] max-[767px]:w-[343px] max-[767px]:h-[550px] max-[767px]:pb-[28px]">
+    <div
+      className="content-stretch flex flex-col
+      h-[579px]
+      items-start
+      justify-between
+      pb-[29px]
+      pt-0 px-0
+      relative
+      shrink-0
+      w-[620px]
+
+      max-[1439px]:w-[540px]
+      max-[1279px]:w-[476px]
+
+      max-[1023px]:w-[620px]
+      max-[1023px]:mx-auto
+
+      max-[767px]:w-[343px]
+      max-[767px]:h-[550px]
+      max-[767px]:pb-[28px]"
+    >
       <OfferCardImage />
       <div className="bg-white content-stretch flex flex-col h-[517px] items-start justify-between mb-[-29px] pb-[50px] pt-[52px] px-[40px] relative rounded-[20px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.12)] shrink-0 w-[620px] max-[1439px]:w-[540px] max-[1439px]:px-[35px] max-[1279px]:w-[476px] max-[1279px]:px-[20px] max-[1279px]:pt-[50px] max-[1279px]:pb-[50px] max-[1023px]:w-[620px] max-[1023px]:px-[40px] max-[767px]:w-[343px] max-[767px]:h-[487px] max-[767px]:mb-[-28px] max-[767px]:px-[20px] max-[767px]:pt-[44px] max-[767px]:pb-[50px]">
         <div className="content-stretch flex flex-col gap-[50px] items-start relative shrink-0 w-full">
@@ -108,7 +128,23 @@ function TestimonialCardImage() {
 
 function CustomLLMCard() {
   return (
-    <div className="content-stretch flex flex-col items-start pb-[87px] pt-0 px-0 relative shrink-0 w-[620px] max-[1439px]:w-[540px] max-[1279px]:w-[476px] max-[1023px]:w-[620px] max-[767px]:w-[343px]">
+    <div
+      className="content-stretch flex flex-col
+      items-start
+      pb-[87px]
+      pt-0 px-0
+      relative
+      shrink-0
+      w-[620px]
+
+      max-[1439px]:w-[540px]
+      max-[1279px]:w-[476px]
+
+      max-[1023px]:w-[620px]
+      max-[1023px]:mx-auto
+
+      max-[767px]:w-[343px]"
+    >
       <TestimonialCardImage />
       <div className="content-stretch flex flex-col h-[517px] items-start justify-between mb-[-87px] px-[40px] py-[50px] relative rounded-[20px] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.12)] shrink-0 w-[620px] max-[1439px]:w-[540px] max-[1439px]:px-[35px] max-[1279px]:w-[476px] max-[1279px]:px-[20px] max-[1279px]:py-[50px] max-[1023px]:w-[620px] max-[1023px]:px-[40px] max-[767px]:w-[343px] max-[767px]:h-[614px] max-[767px]:max-w-[398px] max-[374px]:max-w-[343px]" style={{ background: 'linear-gradient(136deg, #FFA96C 16.16%, #D2400F 99.01%)' }}>
         <div className="content-stretch flex flex-col gap-[50px] items-start relative shrink-0 w-full max-[767px]:gap-[30px]">
@@ -148,10 +184,45 @@ export default function OffersSection() {
     <section className="w-full flex justify-center px-5 pt-[80px] pb-[80px]">
       <div
         id="offers-section"
-        className="content-stretch flex flex-col gap-[11px] items-center pb-0 pt-[40px] px-[160px] w-full max-w-[1200px] mx-auto max-[1439px]:px-[80px] max-[1279px]:px-[24px] max-[1023px]:pt-[50px] max-[1023px]:px-[160px] max-[767px]:px-[24px] max-[767px]:pt-[20px] max-[767px]:gap-[10px]"
+        className="
+        content-stretch flex flex-col items-center
+        w-full max-w-[1200px] mx-auto
+        pt-[40px] pb-0
+        px-[160px]
+
+        max-[1439px]:px-[80px]
+        max-[1279px]:px-[24px]
+
+        max-[1023px]:pt-[50px]
+        max-[1023px]:px-[24px]
+
+        max-[767px]:px-[24px]
+        max-[767px]:pt-[20px]
+        max-[767px]:gap-[10px]
+      "
       >
         <p className="h-[78px] not-italic relative shrink-0 text-[70px] text-black text-center w-[1280px] max-[1439px]:w-[1120px] max-[1279px]:w-full max-[1023px]:w-[720px] max-[767px]:text-[50px] max-[767px]:w-[343px]" style={{ fontFamily: "Instrument Serif", lineHeight: "70px" }}>Work with me</p>
-        <div className="content-end flex gap-[40px] items-end relative shrink-0 w-[1280px] max-[1439px]:w-[1120px] max-[1439px]:gap-[40px] max-[1279px]:w-full max-[1279px]:gap-[16px] max-[1023px]:flex-wrap max-[1023px]:w-[620px] max-[1023px]:gap-[40px] max-[767px]:content-center max-[767px]:flex-wrap max-[767px]:w-[343px] max-[767px]:gap-[16px] max-[767px]:justify-center">
+        <div
+          className="
+          flex gap-[40px] items-end justify-between
+          w-[1280px] mx-auto
+
+          max-[1439px]:w-[1120px]
+
+          max-[1279px]:w-full
+          max-[1279px]:gap-[16px]
+
+          max-[1023px]:w-full
+          max-[1023px]:px-[24px]
+          max-[1023px]:gap-[16px]
+          max-[1023px]:flex-wrap
+          max-[1023px]:justify-center
+          max-[1023px]:items-start
+
+          max-[767px]:w-[343px]
+          max-[767px]:px-0
+        "
+        >
           <ConsultancyCard />
           <CustomLLMCard />
         </div>

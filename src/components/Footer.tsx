@@ -9,7 +9,7 @@ export default function Footer() {
                    max-[1439px]:w-[1280px] max-[1439px]:px-[80px] max-[1439px]:gap-[171px]
                    max-[1279px]:w-[1016px] max-[1279px]:pb-[155px] max-[1279px]:px-[24px] max-[1279px]:gap-[98px]
                    max-[1023px]:w-[767px] max-[1023px]:gap-[250px]
-                   max-[767px]:w-[375px] max-[767px]:px-[16px] max-[767px]:pt-[25px] max-[767px]:pb-[29px] max-[767px]:gap-0 max-[767px]:justify-between"
+                   max-[767px]:w-[375px] max-[767px]:px-[16px] max-[767px]:pt-[25px] max-[767px]:pb-[29px] max-[767px]:gap-[120px] max-[767px]:justify-between"
       >
         {/* фон: градиент + картинка */}
         <div
@@ -25,7 +25,7 @@ export default function Footer() {
         {/* Контент поверх фона */}
         <div className="relative z-10 flex flex-col gap-[171px] w-full max-[1279px]:gap-[98px] max-[1023px]:gap-[250px] max-[767px]:gap-0">
           {/* Top section */}
-          <div className="content-stretch flex items-start justify-between w-full max-[767px]:flex-wrap max-[767px]:content-start max-[767px]:gap-[75px]">
+          <div className="content-stretch flex items-start justify-between w-full max-[767px]:flex-wrap max-[767px]:content-start max-[767px]:gap-[75px] max-[767px]:mb-[120px]">
             <a
               className="block cursor-pointer h-[46px] hover:opacity-80 not-italic text-[30px] text-right text-white transition-opacity uppercase w-[100px] max-[767px]:order-2"
               style={{ fontFamily: "Instrument Serif", lineHeight: "normal" }}
